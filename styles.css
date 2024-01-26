@@ -19,6 +19,11 @@ main {
     font-weight: 400;
     font-family: Outfit;
     color: hsl(30, 10%, 34%);
+    font-size: 1em;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
 }
 
 .img-cover {
@@ -37,7 +42,6 @@ h1 {
 
 .description {
     padding: 0 24px;
-    font-size: 16px;
 }
 
 .preparation-time {
@@ -105,9 +109,7 @@ section {
 }
 
 .border-bottom-underline {
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color:hsl(30, 54%, 90%);
+    border-bottom: solid 2px hsl(30, 18%, 87%);
 }
 
 h2 {
@@ -131,6 +133,28 @@ h2 {
 }
 
 .grid-item {
-    border-bottom: solid 2px hsl(30, 54%, 90%);
+    border-bottom: solid 2px hsl(30, 18%, 87%);
     padding-bottom: 8px;
+}
+
+@media  only screen and (min-width: 375px) {
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        width: 500px;
+        border-radius: 16px;
+        scale: .9;
+    }
+    .img-cover{
+        margin: 16px 24px 0 24px;
+        width: calc(100% - 48px);
+        border-radius: 16px;
+    }
 }
